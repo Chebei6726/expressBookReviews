@@ -2,7 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const {authenticated,verifyToken} = require('./router/auth_users.js');
 const genl_routes = require('./router/general.js').general;
-require("dotenv").config();
+const axios = require('axios');
 
 const app = express();
 
